@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #F8FAFC;
+  color: #1E293B;
+  line-height: 1.6;
+}
+
+.hero {
+  background-color: #FACC15;
+  color: #1E293B;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  border-bottom: 4px solid #1E293B;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #334155;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.face-card {
+  --face-color: #FACC15;
+  background: #FFFFFF;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+  border-top: 6px solid var(--face-color);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.face-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1);
+}
+
+.card-img-wrap {
+  background-color: #F1F5F9;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-body {
+  padding: 1.15rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.face-id {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748B;
+}
+
+.face-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background-color: #F1F5F9;
+  color: #1E293B;
+  border: 1.5px solid var(--face-color);
+}
+
+.card-body h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #0F172A;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 0.35rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #64748B;
+  font-size: 0.85rem;
+}
